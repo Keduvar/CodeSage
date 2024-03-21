@@ -1,0 +1,50 @@
+main {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.main__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img__photo {
+  border-radius: 40%;
+  margin: 50px;
+}
+
+.about h1 {
+  font-size: var (--h1-font);
+  font-weight: 900;
+  margin: 20px 0px 20px;
+  line-height: 1.2;
+}
+
+.about h3 {
+  margin: 20px 0 20px;
+  font-size: var (--h3-font);
+}
+
+.about p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  width: 620px;
+  max-width: 100%;
+  color: var(--other-color);
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.social img {
+  display: inLine-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var (--main-color);
+  border-radius: 50%;
+  backdrop-filter: brightness(8);
+}
