@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/header.js" defer></script>
     <title>CodeSage</title>
   </head>
   <body>
@@ -13,7 +14,7 @@
       <div class="header__logo">
         <img
           class="menu-icons"
-          id="menu-icons"
+          id="openMenu"
           src="./img/icons8-menu.svg"
           alt="menu"
           height="25px"
@@ -23,9 +24,10 @@
           <div class="logo">Code<span>Sage</span></div>
         </a>
       </div>
-      <nav class="header__menu">
+
+      <nav id='menuMobile' class="header__menu">
         <ul class="header__list">
-          <li class="header__item active">
+          <li class="header__item activePage">
             <a class="header__link" href="/">Home</a>
           </li>
           <li class="header__item">
@@ -37,9 +39,14 @@
           <li class="header__item">
             <a class="header__link" href="html/about.html">About me</a>
           </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Contact me</a>
+          </li>
         </ul>
       </nav>
-      <div class="contact">Contact me</div>
+      <div class="contact">
+        Contact me</a>
+      </div>
     </header>
 
     <main>
