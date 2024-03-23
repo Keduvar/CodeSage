@@ -118,36 +118,6 @@ html {
     justify-content: start;
   }
 
-  /* nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 255px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: coLumn;
-    background: var (--bg-color);
-    transition: all 0.5 ease;
-    border: none;
-  } */
-
-  /* nav.menu {
-    display: flex;
-    position: absolute;
-    
-    flex-direction: column;
-    border: none;
-    z-index: 1000;
-  } */
-
-  /* nav ul {
-    align-items: center;
-    flex-direction: column;
-    row-gap: 30px;
-
-    background: var(--bg-color);
-  } */
-
   .header__item:nth-child(5) {
     display: flex;
   }
@@ -160,22 +130,33 @@ html {
     flex-direction: column;
   }
 
+  .profile__image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .profile__info {
+    padding: 40px;
+  }
+
   .profile__info h2 {
     margin: 10px 0 10px;
     font-size: var (--h2-font);
-    width: 400px;
+    width: 350px;
+    font-weight: 500;
   }
 
   .profile__info h3 {
     margin: 10px 0 10px;
     font-size: var (--h3-font);
-    width: 400px;
+    width: 350px;
+    font-weight: 500;
   }
 
   .profile__info p {
     font-size: var(--p-font);
     font-weight: 400;
-    width: 400px;
+    width: 350px;
     max-width: 100%;
     color: var(--other-color);
     line-height: 30px;
