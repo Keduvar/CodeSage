@@ -125,6 +125,10 @@ nav {
   left: 0;
 }
 
+.theme.dark-theme-active .theme-indicator {
+  transform: translateX(0%);
+}
+
 .theme.light-theme-active .theme-indicator {
   transform: translateX(100%);
 }
