@@ -151,3 +151,76 @@ nav {
   box-shadow: 0 0 20px var(--main-color);
   transform: scale (1.1);
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+
+  min-width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+  position: relative;
+  background: var(--bg-color);
+  margin: auto;
+  border: 3px solid var(--main-color);
+  width: 300px;
+  padding: 15px;
+
+  -webkit-animation-name: animator;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animator;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animator {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animator {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+.modal__main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.model__footer {
+  display: flex;
+  justify-content: center;
+}
