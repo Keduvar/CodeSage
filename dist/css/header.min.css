@@ -54,6 +54,7 @@ nav {
 
 .header__list a {
   font-size: var(--p-font);
+  font-family: var(--p-font-family);
   font-weight: 500;
   color: var(--other-color);
   transition: all 0.5s ease;
@@ -85,7 +86,47 @@ nav {
 .header__link {
   display: inline-block;
   padding: 10px 25px;
-  color: var(--text-color-menu);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.theme {
+  border: 2px solid #fff;
+  background-color: #333;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+  margin: 15px;
+  width: 60px;
+  height: 30px;
+}
+
+.theme img {
+  transition: opacity 0.3s;
+  height: auto;
+  width: 50%;
+}
+
+.theme-indicator {
+  position: absolute;
+  background-color: var(--main-color);
+  transition: transform 0.3s;
+  border-radius: inherit;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+  left: 0;
+}
+
+.theme.light-theme-active .theme-indicator {
+  transform: translateX(100%);
 }
 
 .contact {
