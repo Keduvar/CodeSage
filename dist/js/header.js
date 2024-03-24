@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
   backdrop.classList.add("menu-backdrop");
   document.body.appendChild(backdrop);
 
-  openMenu.addEventListener("click", () => {
+  openMenu.addEventListener("click", function () {
     openMenu.classList.toggle("menu");
     menuMobile.classList.toggle("open");
     main.classList.toggle("shift");
     backdrop.classList.toggle("show");
   });
 
-  backdrop.addEventListener("click", () => {
+  backdrop.addEventListener("click", function () {
     openMenu.classList.toggle("menu");
     menuMobile.classList.remove("open");
     main.classList.remove("shift");
