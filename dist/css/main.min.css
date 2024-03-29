@@ -149,7 +149,7 @@ html {
     transform: translateX(45%);
   }
 
-  .header__item:nth-child(5) {
+  .header__item:nth-child(5) .contact {
     display: block;
   }
 

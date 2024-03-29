@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     menuMobile.classList.toggle("open");
     main.classList.toggle("shift");
     backdrop.classList.toggle("show");
+    
+    contactModel.style.display = "none";
   });
 
   backdrop.addEventListener("click", function () {
@@ -34,6 +36,36 @@ document.addEventListener("DOMContentLoaded", () => {
   if (savedTheme === "light-theme") lightTheme();
 
   root.classList.add(savedTheme);
+
+  // Модальное окно
+  var contactModel = document.getElementById("contactModel");
+
+  var openModel = document.querySelectorAll("[id='openModel']");
+
+  var close = document.getElementsByClassName("close")[0];
+
+  for(var i = 0; i < openModel.length; i++)
+  {
+    openModel[i].onclick = function () {
+      contactModel.style.display = "block";
+
+      openMenu.classList.toggle("menu");
+      menuMobile.classList.remove("open");
+      main.classList.remove("shift");
+      backdrop.classList.remove("show");
+    }
+  }
+
+  close.onclick = function () {
+    contactModel.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == contactModel) {
+      contactModel.style.display = "none";
+    }
+  };
+
 });
 
 function darkTheme() {
@@ -45,6 +77,8 @@ function darkTheme() {
   themeButton.classList.remove("light-theme-active");
 
   localStorage.setItem("theme", "dark-theme");
+
+  contactModel.style.display = "none";
 }
 
 function lightTheme() {
@@ -56,25 +90,8 @@ function lightTheme() {
   themeButton.classList.remove("dark-theme-active");
 
   localStorage.setItem("theme", "light-theme");
+
+  contactModel.style.display = "none";
 }
 
-// Модальное окно
-var contactModel = document.getElementById("contactModel");
 
-var openModel = document.getElementById("openModel");
-
-var close = document.getElementsByClassName("close")[0];
-
-openModel.onclick = function () {
-  contactModel.style.display = "block";
-};
-
-close.onclick = function () {
-  contactModel.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == contactModel) {
-    contactModel.style.display = "none";
-  }
-};

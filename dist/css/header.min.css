@@ -79,7 +79,7 @@ nav {
   color: var(--bg-color);
 }
 
-.header__item:nth-child(5) {
+.header__item:nth-child(5) .contact{
   display: none;
 }
 
