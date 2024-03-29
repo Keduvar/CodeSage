@@ -95,7 +95,7 @@ nav {
 
 .theme {
   border: 2px solid #fff;
-  background-color: #333;
+  background-color: var(--other-color);
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -104,8 +104,8 @@ nav {
   transition: background-color 0.3s;
   position: relative;
   margin: 15px;
-  width: 60px;
-  height: 30px;
+  width: 70px;
+  height: 35px;
 }
 
 .theme img {
@@ -132,6 +132,7 @@ nav {
 .theme.light-theme-active .theme-indicator {
   transform: translateX(100%);
 }
+
 
 .contact {
   display: inline-block;
@@ -222,6 +223,7 @@ nav {
 }
 
 .model__footer {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }

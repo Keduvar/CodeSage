@@ -59,22 +59,22 @@ function lightTheme() {
 }
 
 // Модальное окно
-var modal = document.getElementById("contactModel");
+var contactModel = document.getElementById("contactModel");
 
-var btn = document.getElementById("openModel");
+var openModel = document.getElementById("openModel");
 
-var span = document.getElementsByClassName("close")[0];
+var close = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
+openModel.onclick = function () {
+  contactModel.style.display = "block";
 };
 
-span.onclick = function () {
-  modal.style.display = "none";
+close.onclick = function () {
+  contactModel.style.display = "none";
 };
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == contactModel) {
+    contactModel.style.display = "none";
   }
 };

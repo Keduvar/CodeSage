@@ -54,6 +54,7 @@ html {
 @media (max-width: 1200px) {
   header {
     padding-left: 0;
+    padding-right: 60px;
   }
 
   .menu-icons {
