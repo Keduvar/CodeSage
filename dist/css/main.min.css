@@ -46,12 +46,13 @@
 body,
 html {
   height: 100%;
+  min-height: 100vh;
   color: var(--text-color);
   background: var(--bg-color);
   overflow-x: hidden;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   header {
     padding-left: 0;
     padding-right: 60px;
