@@ -52,7 +52,7 @@ html {
   overflow-x: hidden;
 }
 
-@media (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
   header {
     padding-left: 0;
     padding-right: 60px;
@@ -115,13 +115,13 @@ html {
   }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   main.shift {
     transform: translateX(25%);
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .main__profile {
     flex-direction: column;
   }
@@ -139,9 +139,21 @@ html {
   main.shift {
     transform: translateX(30%);
   }
+
+  .main__about {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .main__about h3 {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 2px solid #4caf50;
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   header {
     padding-right: 0;
   }
@@ -159,8 +171,12 @@ html {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   main.shift {
     transform: translateX(50%);
+  }
+
+  .main__about h2 {
+    font-size: 12px;
   }
 }
