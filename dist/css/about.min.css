@@ -37,11 +37,8 @@ main {
   text-align: justify;
 }
 
-.main__footer {
+.main__about h2 {
   text-align: center;
-}
-
-.main__footer h2 {
   font-size: var (--h2-font);
   font-family: var(--h2-font-family);
   font-weight: 700;
