@@ -28,7 +28,7 @@ header {
 }
 
 .menu {
-  content: url("/dist/img/cross.svg");
+  content: url("/img/cross.svg");
 }
 
 .logo {
